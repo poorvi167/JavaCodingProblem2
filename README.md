@@ -12,13 +12,13 @@ first non-repeated character from a given `String`.
 ### Sample Input 1
 
 ```
-
+"abacabad
 ```
 
 ### Sample Output 1
 
 ```
-
+c
 ```
 
 ---
