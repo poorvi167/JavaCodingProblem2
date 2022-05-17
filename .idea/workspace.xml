@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63826773-1d5b-4083-a5b7-ef438984a8ce" name="Changes" comment="add sonarlint to the gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dbc/NonRepeatedCharactersFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dbc/NonRepeatedCharactersFinder.java" afterDir="false" />
+    <list default="true" id="63826773-1d5b-4083-a5b7-ef438984a8ce" name="Changes" comment="add the Main class">
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/dbc/NonRepeatedCharactersFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/dbc/NonRepeatedCharactersFinderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
       <recent name="io.github.dbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.NonRepeatedCharactersFinderTest.displayNameForTheTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.dbc.Main" />
       <module name="JCP_C1_P2" />
@@ -81,8 +80,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NonRepeatedCharactersFinderTest.displayNameForTheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JCP_C1_P2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.dbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.dbc" />
+      <option name="MAIN_CLASS_NAME" value="io.github.dbc.NonRepeatedCharactersFinderTest" />
+      <option name="METHOD_NAME" value="displayNameForTheTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NonRepeatedCharactersFinderTest.displayNameForTheTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.NonRepeatedCharactersFinder" />
       </list>
@@ -97,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652556065957</updated>
       <workItem from="1652556068328" duration="2497000" />
-      <workItem from="1652755565713" duration="2519000" />
+      <workItem from="1652755565713" duration="2908000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1652556152973</created>
@@ -134,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652812637434</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add a constant for the number of extended ascii character codes">
+      <created>1652813355237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652813355237</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add the Main class">
+      <created>1652813439178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652813439178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +187,9 @@
     <MESSAGE value="add the Test class" />
     <MESSAGE value="rename the method" />
     <MESSAGE value="add sonarlint to the gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sonarlint to the gitignore" />
+    <MESSAGE value="add a constant for the number of extended ascii character codes" />
+    <MESSAGE value="add the Main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the Main class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
