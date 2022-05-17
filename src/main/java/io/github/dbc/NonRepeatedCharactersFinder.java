@@ -1,6 +1,8 @@
 package io.github.dbc;
 
 public class NonRepeatedCharactersFinder {
+    private static final int EXTENDED_ASCII_CODES = 256;
+
     /**
      * Finds the non-repeated character in a string.
      *
