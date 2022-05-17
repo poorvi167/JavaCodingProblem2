@@ -10,6 +10,6 @@ public class NonRepeatedCharactersFinder {
      * @return the first non-repeated character in the string.
      */
     public char findFirstNonRepeatedCharacter(String string) {
-        return Character.MIN_VALUE;
+        return Character.MAX_VALUE;
     }
 }
