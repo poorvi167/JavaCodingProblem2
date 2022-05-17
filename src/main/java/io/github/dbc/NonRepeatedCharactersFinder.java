@@ -7,7 +7,7 @@ public class NonRepeatedCharactersFinder {
      * @param string String to find non-repeated characters in.
      * @return the first non-repeated character in the string.
      */
-    public char firstNonRepeatedCharacter(String string) {
+    public char findFirstNonRepeatedCharacter(String string) {
         return Character.MIN_VALUE;
     }
 }
