@@ -2,6 +2,7 @@ package io.github.dbc;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EmptySource;
 import org.junit.jupiter.params.provider.NullSource;
@@ -33,10 +34,23 @@ class NonRepeatedCharactersFinderTest {
         assertEquals(Character.MIN_VALUE, finder.findFirstNonRepeatedCharacter(input));
     }
 
-    @ParameterizedTest(name = "findFirstNonRepeatedCharacter(\"{arguments}\")")
+    @ParameterizedTest(name = "findFirstNonRepeatedCharacter({arguments})")
     @DisplayName("should throw an IllegalArgumentException for null strings")
     @NullSource
     void shouldThrowAnIllegalArgumentExceptionForNullStrings(String input) {
         assertThrows(IllegalArgumentException.class, () -> finder.findFirstNonRepeatedCharacter(input));
+    }
+
+    @Test
+    @DisplayName("should return the first non repeated character")
+    void shouldReturnTheFirstNonRepeatedCharacter() {
+        // Arrange
+        String input = """
+                "The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie
+                """;
+        // Act
+        char result = finder.findFirstNonRepeatedCharacter(input);
+        // Assert
+        assertEquals('T', result);
     }
 }
