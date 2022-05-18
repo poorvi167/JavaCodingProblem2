@@ -1,5 +1,7 @@
 package io.github.dbc;
 
+import java.util.HashMap;
+
 public class NonRepeatedCharactersFinder {
     private static final int EXTENDED_ASCII_CODES = 256;
 
@@ -10,6 +12,24 @@ public class NonRepeatedCharactersFinder {
      * @return the first non-repeated character in the string.
      */
     public char findFirstNonRepeatedCharacter(String string) {
-        return Character.MAX_VALUE;
+        if (string == null) {
+            throw new IllegalArgumentException();
+        }
+        char firstNonRepeatedCharacter = Character.MIN_VALUE;
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (Character character : string.toCharArray()) {
+            if (map.containsKey(character)) {
+                map.put(character, map.get(character) + 1);
+            } else {
+                map.put(character, 1);
+            }
+        }
+        for (Character character : string.toCharArray()) {
+            if (map.get(character) == 1) {
+                firstNonRepeatedCharacter = character;
+                break;
+            }
+        }
+        return firstNonRepeatedCharacter;
     }
 }
